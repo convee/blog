@@ -1,0 +1,21 @@
+app_name = "blog"
+[log]
+log_name = "blog"
+log_path = "logs"
+[mysql]
+[mysql.blog]
+ip = "127.0.0.1"
+port = "3306"
+username = "root"
+password = "password"
+database = "blog"
+charset = "utf8"
+maxIdle = 2000
+maxOpen = 500
+maxLifetime = 600
+[redis]
+[redis.default]
+Address = "127.0.0.1:6379"
+MaxIdle =3 #最大空闲连接数
+MaxActive = 100
+IdleTimeout = 240 #最大空闲连接时间
